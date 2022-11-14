@@ -34,7 +34,7 @@ env:
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
-  TZ: Europe/Madrid
+  TZ: America/Sao_Paulo
 
 jobs:
   build:
