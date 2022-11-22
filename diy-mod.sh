@@ -21,6 +21,7 @@ sed -i "s/2.openwrt.pool.ntp.org/0.europe.pool.ntp.org/g" package/base-files/fil
 
 # Kernel Patch
 curl -sfL https://raw.githubusercontent.com/Boos4721/openwrt/master/target/linux/ipq807x/patches-5.15/700-ipq8074-overclock-cpu-2.2ghz.patch -o target/linux/ipq807x/patches-5.15/700-ipq8074-overclock-cpu-2.2ghz.patch
+cp patchs/* target/linux/ipq807x/patches-5.15/
 sed -i 's/uci_write_config 0 schedutil 1017600 $CPU_MAX_FREQ/uci_write_config 0 ondemand 1017600 1382400/g' package/openwrt-packages/luci-app-cpufreq/root/etc/uci-defaults/10-cpufreq
 
 sed -i '$a  \
