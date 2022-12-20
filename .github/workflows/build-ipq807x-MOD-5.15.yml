@@ -24,7 +24,7 @@ on:
 
 env:
   REPO_URL: https://github.com/robimarko/openwrt
-  REPO_BRANCH: ipq807x-5.15-pr
+  REPO_BRANCH: ipq807x-2022-12-19-1045
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: IPQ807x-5.15-mod.config
   PATCHS_FOLDER: patchs
